@@ -7,8 +7,8 @@
 
 DHT dht(DHT_pin, DHTTYPE);
 
-const char* ssid = "Internet";
-const char* password = "00000000";
+const char* ssid = "Your SSID";
+const char* password = "Your Password";
 
 void setup () {
 
@@ -44,7 +44,7 @@ void loop() {
     delay(1000);
 
     //String URL for GET request
-    String url = "http://oizom.eu-gb.mybluemix.net";
+    String url = "http://your_IBM_cloud_username.eu-gb.mybluemix.net";
     String api = "/data";
     url += api;
     String param1 = "?temp=" + String(t);
